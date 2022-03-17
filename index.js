@@ -61,7 +61,7 @@ app.get('/github/repos', (req, res) => {
     user.listRepos((err, repos) => {
         res.status(200).send({
             message: "somthing went wrong",
-            repos: repos ?? []
+            repos: repos
         });
     });
 });
